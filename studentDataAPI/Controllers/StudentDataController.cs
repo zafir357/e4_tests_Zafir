@@ -72,7 +72,7 @@ namespace studentDataAPI.Controllers
         }
 
 
-        // DELETE: api/ApiWithActions/5
+        // DELETE: api/StudentData/5
         [HttpDelete("{id}")]
         public ActionResult Delete(int id)
         {
