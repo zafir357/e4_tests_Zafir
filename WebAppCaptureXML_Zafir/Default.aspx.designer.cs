@@ -105,6 +105,15 @@ namespace WebAppCaptureXML_Zafir
         protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator3;
 
         /// <summary>
+        /// RegularExpCount3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpCount3;
+
+        /// <summary>
         /// btnSubmit control.
         /// </summary>
         /// <remarks>
