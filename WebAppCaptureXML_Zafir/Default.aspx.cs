@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Xml;
 using System.Xml.Linq;
 
+//Assumptions Cellphone Number Mauritian //Minimum 7 - Maximum 8
 
 namespace WebAppCaptureXML_Zafir
 {
@@ -40,6 +41,8 @@ namespace WebAppCaptureXML_Zafir
 
         }
 
+        //Assumptions Cellphone Number Mauritian
+        //Minimum 7 - Maximum 8
         protected void btnSubmit_Click(object sender, EventArgs e)
         {
 
@@ -104,7 +107,8 @@ namespace WebAppCaptureXML_Zafir
             gvListPersonsRecords.EditIndex = -1;
             this.BindGrid();
         }
-
+        //Assumptions Cellphone Number Mauritian
+        //Minimum 7 - Maximum 8
         protected void GridView1_RowUpdating(object sender, GridViewUpdateEventArgs e)
         {
             GridViewRow row = gvListPersonsRecords.Rows[e.RowIndex];
@@ -130,6 +134,7 @@ namespace WebAppCaptureXML_Zafir
             gvListPersonsRecords.DataBind();      
 
         }
+
 
         protected void XmlGridView_RowDeleting(object sender, GridViewDeleteEventArgs e)
         {
