@@ -1,0 +1,5 @@
+1.Assumed only Mauritian Number, so I used int for phone number
+
+2. Application is a web form application using gridview
+
+3. XML file is named webCaptureXML and is directly in project(NOT IN ANY SUBFOLDERS)

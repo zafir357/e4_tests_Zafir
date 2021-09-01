@@ -1,0 +1,10 @@
+1.I used a list I created when the get request is called
+as the exercise doesn't mention making use of a database
+
+2. When doing insert(POST) and Update(PUT) on POSTMAN OR Advanced Rest Client,
+ ensure Body Content Type="application/json".
+
+3.The list is displayed after each post,put or delete to show the updated list.
+
+4.when using get(), the list is regenarated because the list is created on the get request.
+I didn't use a database but a list.

@@ -1,0 +1,3 @@
+1. A windows application,
+2. For new line hold tab and press enter on the windows box.(Multiline)
+3.Unit testing in XUnitTestProjXCalc project
