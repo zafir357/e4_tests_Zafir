@@ -23,7 +23,8 @@ namespace studentDataAPI.Controllers
 
         // GET: api/StudentData
         [HttpGet]
-
+        //when using get(), the list is regenarated everytime because the list is created on the get request.
+       // I didn't use a database but a list
         public ActionResult GetStudent()
         {
             if (Students.Count==0)
@@ -43,7 +44,9 @@ namespace studentDataAPI.Controllers
 
             
         }
-
+        //When doing insert(POST) and Update(PUT) on POSTMAN OR Advanced Rest Client,
+        //ensure Body Content Type="application/json".
+        //The list is displayed after each post,put or delete to show the updated list
         // POST: api/StudentData
         [HttpPost]
         public List<Student> Post([FromBody] Student stud)
@@ -53,7 +56,12 @@ namespace studentDataAPI.Controllers
 
             return Students;
         }
-
+        /*
+         *  //When doing insert(POST) and Update(PUT) on POSTMAN OR Advanced Rest Client,
+        //ensure Body Content Type="application/json".
+        //The list is displayed after each post,put or delete to show the updated list
+        // POST: api/StudentData
+         * */
         // PUT: api/StudentData/5
         [HttpPut("{id}")]
         public ActionResult Put(int id, [FromBody] Student stud)
