@@ -4,4 +4,4 @@
 
 3. XML file is named webCaptureXML and is directly in project(NOT IN ANY SUBFOLDERS).
 
-4.Can have two people with the same name
+4.Can have two people with the same name.
