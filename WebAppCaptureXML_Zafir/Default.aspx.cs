@@ -10,7 +10,9 @@ using System.Windows.Forms;
 using System.Xml;
 using System.Xml.Linq;
 
-//Assumptions Cellphone Number Mauritian //Minimum 7 - Maximum 8
+//Assumptions Cellphone Number Mauritian 8 Characters int
+//no international calls, within country only
+//Can have two people with the same name
 
 namespace WebAppCaptureXML_Zafir
 {
@@ -41,8 +43,8 @@ namespace WebAppCaptureXML_Zafir
 
         }
 
-        //Assumptions Cellphone Number Mauritian
-        //Minimum 7 - Maximum 8
+        //Assumptions Cellphone Number Mauritian 8 Characters int
+        //no international calls, within country only
         protected void btnSubmit_Click(object sender, EventArgs e)
         {
 
@@ -107,8 +109,8 @@ namespace WebAppCaptureXML_Zafir
             gvListPersonsRecords.EditIndex = -1;
             this.BindGrid();
         }
-        //Assumptions Cellphone Number Mauritian
-        //Minimum 7 - Maximum 8
+        //Assumptions Cellphone Number Mauritian 8 Characters int
+        //no international calls, within country only
         protected void GridView1_RowUpdating(object sender, GridViewUpdateEventArgs e)
         {
             GridViewRow row = gvListPersonsRecords.Rows[e.RowIndex];

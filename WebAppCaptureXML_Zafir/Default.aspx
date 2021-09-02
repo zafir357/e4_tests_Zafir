@@ -52,7 +52,7 @@
                         <asp:TextBox ID="tbNumber" runat="server"></asp:TextBox>
                         <asp:RequiredFieldValidator ValidationGroup="submitClick" ID="RequiredFieldValidator3" ControlToValidate="tbNumber" runat="server" ErrorMessage="Cellphone Number is required" Display="Dynamic" ForeColor="Red"></asp:RequiredFieldValidator>
                         <asp:RegularExpressionValidator ValidationGroup="submitClick" ID="RegularExpressionValidator3" runat="server" ValidationExpression="^[0-9]*$" ErrorMessage="Cellphone Number can only contain numeric characters" ControlToValidate="tbNumber" Display="Dynamic" ForeColor="Red"></asp:RegularExpressionValidator>
-                        <asp:RegularExpressionValidator ID="RegularExpCount3" ValidationGroup="submitClick" runat="server" ControlToValidate="tbNumber"  ValidationExpression="^([\S\s]{7,8})$"  ErrorMessage="Please enter between 7-8 characters for cellphone number"  Display="Dynamic" ForeColor="Red"> </asp:RegularExpressionValidator>
+                        <asp:RegularExpressionValidator ID="RegularExpCount3" ValidationGroup="submitClick" runat="server" ControlToValidate="tbNumber"  ValidationExpression="^([\S\s]{8})$"  ErrorMessage="Please enter exactly 8 characters for cellphone number"  Display="Dynamic" ForeColor="Red"> </asp:RegularExpressionValidator>
                     </td>
                 </tr>
             </table>
@@ -96,7 +96,7 @@
                             <EditItemTemplate>
                                 <asp:TextBox ID="txtCellphone" runat="server" Text='<%# Bind("Cellphone_Number") %>'></asp:TextBox>
                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="txtCellphone" ForeColor="Red" ErrorMessage="Cellphone Number can't be blanked" Display="Dynamic" ></asp:RequiredFieldValidator>
-                                <asp:RegularExpressionValidator ID="RegularExpressionValidator10" runat="server" ControlToValidate="txtCellphone"  ValidationExpression="^([\S\s]{7,8})$"  ErrorMessage="Please enter between 7-8 characters for cellphone number"  Display="Dynamic" ForeColor="Red" EnableClientScript="true"> </asp:RegularExpressionValidator>
+                                <asp:RegularExpressionValidator ID="RegularExpressionValidator10" runat="server" ControlToValidate="txtCellphone"  ValidationExpression="^([\S\s]{8})$"  ErrorMessage="Please enter exactly 8 characters for cellphone number"  Display="Dynamic" ForeColor="Red" EnableClientScript="true"> </asp:RegularExpressionValidator>
                                   <asp:RegularExpressionValidator ID="RegularExpressionValidator11" runat="server" ValidationExpression="^[0-9]*$" ErrorMessage="Cellphone Number can only contain numeric characters" ControlToValidate="txtCellphone" Display="Dynamic" ForeColor="Red" EnableClientScript="true"></asp:RegularExpressionValidator>
     
                                 </EditItemTemplate>
@@ -123,4 +123,10 @@
     </form>
 </body>
 </html>
-
+<script type="text/javascript">
+window.onload = function() {
+    document.getElementById('tbFname').value = '';
+    document.getElementById('tbSurname').value = '';
+    document.getElementById('tbNumber').value = '';
+  }
+</script>

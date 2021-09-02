@@ -1,18 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <List>
   <people>
-    <id>1</id>
-    <First_Name>Zafir</First_Name>
-    <Surname>Jeeawody</Surname>
-    <Cellphone_Number>58311181</Cellphone_Number>
-  </people>
-  <people>
-    <id>2</id>
-    <First_Name>Zafir</First_Name>
-    <Surname>Jeeawody</Surname>
-    <Cellphone_Number>58311181</Cellphone_Number>
-  </people>
-  <people>
     <id>3</id>
     <First_Name>John</First_Name>
     <Surname>Brown</Surname>
@@ -23,11 +11,5 @@
     <First_Name>Zafir</First_Name>
     <Surname>Jeeawody</Surname>
     <Cellphone_Number>55555</Cellphone_Number>
-  </people>
-  <people>
-    <id>5</id>
-    <First_Name>Zafir</First_Name>
-    <Surname>Jeeawody</Surname>
-    <Cellphone_Number>58931111</Cellphone_Number>
   </people>
 </List>
