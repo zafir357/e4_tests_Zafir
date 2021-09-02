@@ -1,3 +1,7 @@
-1. A windows application,
-2. For new line hold tab and press enter on the windows box.(Multiline)
-3.Unit testing in XUnitTestProjXCalc project
+1.Assumed only Mauritian Number, so I used int for phone number, no international calls
+
+2. Application is a web form application using gridview
+
+3. XML file is named webCaptureXML and is directly in project(NOT IN ANY SUBFOLDERS).
+
+4.Can have two people with the same name
