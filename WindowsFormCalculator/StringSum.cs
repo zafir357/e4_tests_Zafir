@@ -9,6 +9,11 @@ namespace WindowsFormCalculator
 {
    public class StringSum
     {
+        /*
+         * 1. A windows application,
+           2. For new line hold tab and press enter on the windows box.(Multiline)
+           3.Unit testing in XUnitTestProjXCalc project
+         * */
         public static int Add(string numbers)
         {
             char[] custDelims = GetDelimiters(numbers);
